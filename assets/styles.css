@@ -1,7 +1,36 @@
+:root {
+  --gray1: #999 ;
+  --gray2: #888;
+  --gray3: #777;
+  --gray4: #666;
+  --gray5: #555;
+  
+
+}
 
 .main-page {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(10, 100px);
-  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+
+
 }
+
+.main-page > * {
+  flex: 1;  
+  border: 1px solid black;
+}
+
+.main-page 
+
+
+.flex {
+  display: flex;
+}
+nav.flex > *{
+  flex: 1;
+  border: 1px solid red;
+  background-color: var(--gray1);
+}
+
+
+
