@@ -1,14 +1,17 @@
 :root {
+  --gray0: #bfbfbf;
   --gray1: #999 ;
   --gray2: #888;
   --gray3: #777;
   --gray4: #666;
   --gray5: #555;
+
 }
 
 .main-page {
   display: flex;
   flex-direction: column;
+  background-color: var(--gray0);
 }
 
 .flex {
@@ -216,7 +219,8 @@ section.articles >*:not(.black):hover , section.guides-section div:hover{
   width: calc(100% + 60px);
   height: calc(100%+60px);
   padding: 10px;
-  box-shadow: 1px 1px 5px var(--gray1) , -1px -1px 5px var(--gray1)  ;
+  box-shadow: 1px 1px 5px var(--gray1), -1px -1px 5px var(--gray1);
+  background-color: var(--gray1)
 }
 
 section.articles:hover, section.guides-section:hover {
@@ -381,6 +385,10 @@ body .person-section {
   width: 90%;
 }
 
+.person-section > *:hover {
+  background-color: var(--gray1);
+}
+
 .person-section .flex {
   width: 100%;
 }
@@ -403,13 +411,13 @@ body .person-section {
 }
 
 .person-section div a {
-  color: var(--gray1);
+  color: var(--gray3);
   text-decoration: underline;
   font-size: 1.0em;
 }
 
 .person-section div span {
-  color: var(--gray1);
+  color: var(--gray3);
   margin-left: 10px;
   font-size: 1.0em;
 }
@@ -493,6 +501,7 @@ padding: 1.5em 6em;
 
 section.guides-section div {
   padding-left: 3em;
+   margin-bottom: 2em;
 }
 
 section.guides-section div span {
@@ -514,11 +523,11 @@ section.guides-section div ul{
 
 section.guides-section div ul li {
   list-style: disc;
-  
+
 }
 
 section.guides-section div ul li a {
- 
+
   text-decoration: underline;
   color: var(--gray4);
   line-height: 3em;
@@ -560,7 +569,7 @@ section.newsletter img {
 section.newsletter label {
   display: block;
   width: 500px;;
-  
+
 }
 
 section.newsletter label input {
@@ -587,5 +596,79 @@ section.newsletter small {
   font-size: 1.2em;
 }
 
+footer {
+  background-color: var(--gray3);
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
 
+footer h4 {
+  text-align: center;
+  display: block;
+  margin: 2em auto;
+}
 
+footer ul {
+  width: 90%;
+  list-style: disc;
+  flex-flow: wrap;
+  justify-content: center;
+  line-height: 1.5;
+  font-family: Elena;
+  font-size: 1.2em;
+  color: var(--gray5);
+  text-align: center;
+  box-sizing: border-box;
+  margin: 2em 0;
+  max-width: 60%;
+  list-style: disc;
+  padding: 0;
+}
+
+footer ul li a {
+  color: white;
+  margin-left: -5px;
+}
+
+footer div.first-list {
+    margin: 2em 0;
+}
+
+footer .first.flex {
+  margin: 0 auto;
+}
+
+footer div.first-list h4 {
+  color: white;
+}
+
+footer div .first li {
+  width: 80px;
+  text-align: left;
+}
+
+footer div.second-list p:first-child{
+  font-style: italic;
+}
+
+footer div.second-list p{
+  text-align: center;
+  color: white;
+  line-height: 1.5em;
+}
+
+footer div.second-list ul {
+  text-decoration: underline;
+  list-style: none;
+  margin: 2em auto;
+  width: 100%;
+  flex-flow: wrap;
+  text-align: center;
+  font-size: 1em;
+}
+
+footer div.second-list ul li {
+  line-height: 2em;
+  padding: 0 1em;
+}
