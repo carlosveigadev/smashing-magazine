@@ -373,10 +373,6 @@ body .person-section {
   width: 90%;
 }
 
-body .person-section > * {
-  border: 1px solid red;
-}
-
 .person-section .person-of-week {
   grid-column: span 2;
   justify-content: center;
@@ -403,4 +399,40 @@ body .person-section > * {
   font-size: 1.5em;
   color: var(--gray5);
   line-height: 1.5em;
+}
+
+.person-section div a {
+  color: var(--gray1);
+  text-decoration: underline;
+  font-size: 1.0em;
+}
+
+.person-section div span {
+  color: var(--gray1);
+  margin-left: 10px;
+  font-size: 1.0em;
+}
+
+.person-section div p {
+    font-size: 1.3em;
+    line-height: 1.5em;
+
+}
+
+.person-section div p span {
+    margin-left: 0;
+}
+
+.person-section h1 a {
+  display: inline-block;
+  text-decoration: none;
+  margin: 1em 0;
+  font-size: 2.5em;
+  color: var(--gray5);
+  font-weight: 700;
+}
+
+.person-section h1 a:hover {
+  color: var(--gray1);
+  transition: 0.75s;
 }
