@@ -13,10 +13,6 @@
   flex-direction: column;
 }
 
-.main-page > * {
-  flex: 1;
-}
-
 .flex {
   display: flex;
 }
@@ -193,4 +189,31 @@ nav.flex ul li button:hover {
 
 .main-links .second-row .arrow {
   margin-top: 50px;
+}
+
+section.articles  {
+  
+  height: 542px;
+  border: 1px solid black;
+}
+
+section.articles article {
+  padding: 30px 40px 0 40px;
+}
+
+section.articles article > * {
+   border: 1px solid black;
+  color: var(--gray2); 
+  
+ 
+}
+
+section.articles article span{
+
+}
+
+section.articles article h2{
+  font-size: 2em;
+  font-weight: 700;
+  color: black;
 }
