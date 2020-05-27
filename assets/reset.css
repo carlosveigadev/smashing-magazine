@@ -4,6 +4,7 @@
 */
 *, ::after, ::before {
 	box-sizing: border-box;
+
 }
 
 html, body, div, span, applet, object, iframe,
@@ -26,7 +27,6 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 	font-family: 'Balsamiq Sans', cursive;
-
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,

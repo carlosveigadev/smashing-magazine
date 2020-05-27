@@ -140,6 +140,7 @@ nav.flex ul li button:hover {
 }
 
 .main-links div img:hover,
+.flex.red-block div:last-child img:hover,
 .person-section .person-of-week picture img:hover,
 .person-section .flex picture img:hover {
   transform: rotate(0deg);
@@ -211,18 +212,18 @@ section.articles > * {
   position: relative;
 }
 
-section.articles >*:not(.black):hover{
+section.articles >*:not(.black):hover , section.guides-section div:hover{
   width: calc(100% + 60px);
   height: calc(100%+60px);
   padding: 10px;
   box-shadow: 1px 1px 5px var(--gray1) , -1px -1px 5px var(--gray1)  ;
 }
 
-section.articles:hover {
+section.articles:hover, section.guides-section:hover {
  grid-gap: 4em;
 }
 
-section.articles  {
+section.articles, .guides-section {
   margin: 0 auto;
   width: 90%;
   display: grid;
@@ -436,3 +437,155 @@ body .person-section {
   color: var(--gray1);
   transition: 0.75s;
 }
+
+.flex.red-block {
+ height: 420px;
+ margin-bottom: 4em;
+}
+
+.flex.red-block div:first-child {
+  flex: 3;
+}
+
+.flex.red-block div:last-child{
+  flex: 1;
+  position: relative;
+
+}
+
+.flex.red-block div{
+background-color: var(--gray3);
+color: #fff;
+padding: 1.5em 6em;
+
+
+}
+
+.flex.red-block div:first-child span {
+  display: inline-block;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+.flex.red-block div:first-child h2 a {
+  display: inline-block;
+  text-decoration: underline;
+  font-size: 4em;
+  padding: .5em 0;
+  color: #fff;
+}
+
+.flex.red-block div:first-child p {
+  font-size: 1.5em;
+  padding-bottom: 1em;
+  line-height: 1.5em;
+}
+
+.flex.red-block div:last-child img {
+  width: 322px;
+  height: 414px;
+  transform: rotate(-10deg);
+  transition: transform 0.2s ease-out;
+  transform-origin: bottom left;
+  position: absolute;
+   bottom: 1.5em;
+}
+
+section.guides-section div {
+  padding-left: 3em;
+}
+
+section.guides-section div span {
+  display: inline-block;
+  padding: 10px 0;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+section.guides-section div h2 {
+  font-size: 2em;
+  font-weight: 700;
+  padding: 1em 0;
+}
+
+section.guides-section div ul{
+  padding-left: 2em;
+}
+
+section.guides-section div ul li {
+  list-style: disc;
+  
+}
+
+section.guides-section div ul li a {
+ 
+  text-decoration: underline;
+  color: var(--gray4);
+  line-height: 3em;
+
+}
+
+section.newsletter {
+  width: 98%;
+  background-color: var(--gray3);
+  border-radius: 15px;
+  text-align: center;
+
+}
+
+section.newsletter h2 a {
+  display: inline-block;
+  font-size: 3em;
+  color: #fff;
+  text-decoration: underline;
+  padding: 1em 0;
+}
+
+section.newsletter p {
+  padding: 1em 0;
+  width: 540px;
+  line-height: 1.5em;
+  font-size: 1.5em;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.25);
+
+}
+
+section.newsletter img {
+  width: 500px;
+  display: block;
+  padding: 3em;
+}
+
+section.newsletter label {
+  display: block;
+  width: 500px;;
+  
+}
+
+section.newsletter label input {
+width: 60%;
+background-color: white;
+color: var(--gray3);
+border-radius: 8px 0 0 8px;
+font-size: 1.5em;
+padding: .5em;
+border: none;
+}
+section.newsletter label button {
+  width: 39%;
+  border-radius:0 8px 8px 0;
+  border: none;
+  margin-left: -4px;
+}
+
+section.newsletter small {
+  display: inline-block;
+  color: #fff;
+  margin: 2em auto;
+  line-height: 1.5em;
+  font-size: 1.2em;
+}
+
+
+
