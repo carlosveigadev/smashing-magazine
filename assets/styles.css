@@ -114,7 +114,9 @@ nav.flex ul li button:hover {
   padding: 15% 12% 5% 12%;
 }
 
-.main-links div img {
+.main-links div img,
+.person-section .person-of-week picture img,
+.person-section .flex picture img {
   width: 76px;
   height: 76px;
   transform: rotate(-10deg);
@@ -123,9 +125,23 @@ nav.flex ul li button:hover {
   border-radius: 12px;
   border: 4px solid white;
   transition: transform 0.2s ease-out;
+  transform-origin: bottom left;
 }
 
-.main-links div img:hover {
+.person-section .person-of-week picture img {
+  border: 8px solid var(--gray3);
+  width: 286px;
+  height: 286px;
+}
+
+.person-section .flex picture img {
+  border: 4px solid var(--gray3);
+
+}
+
+.main-links div img:hover,
+.person-section .person-of-week picture img:hover,
+.person-section .flex picture img:hover {
   transform: rotate(0deg);
 }
 
@@ -139,16 +155,16 @@ nav.flex ul li button:hover {
   text-shadow: 1px 1px 1px rgba(0,0,0,.25);
 }
 
-.color-1 {
-  background-color: var(--gray1);
-}
-
 .color-2 {
   background-color: var(--gray2);
 }
 
 .color-3 {
   background-color: var(--gray3);
+}
+
+.color-5 {
+  background-color: var(--gray5);
 }
 
 .main-links div .flex span {
@@ -195,7 +211,7 @@ section.articles > * {
   position: relative;
 }
 
-section.articles >*:hover{
+section.articles >*:not(.black):hover{
   width: calc(100% + 60px);
   height: calc(100%+60px);
   padding: 10px;
@@ -205,10 +221,10 @@ section.articles >*:hover{
 section.articles:hover {
  grid-gap: 4em;
 }
-section.articles  {
 
-  width: 50%;
+section.articles  {
   margin: 0 auto;
+  width: 90%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 700px;
@@ -236,7 +252,7 @@ section.articles div.black h1 a {
 }
 section.articles div.black p a{
   text-decoration: underline;
- 
+
 }
 
 button.white-button {
@@ -244,16 +260,24 @@ button.white-button {
   color: var(--gray3);
   border-radius:8px;
   font-size: 1.5em;
-  padding: .3em;
+  padding: .5em;
+}
 
+button.white-button:hover {
+  color: var(--gray5);
 }
 
 section.articles article a.article-arrow {
   position: absolute;
   bottom: 0;
-  padding: 20px;
+  left: 0;
+  padding: 30px;
   font-size: 30px;
   display: block;
+}
+
+section.articles article a.article-arrow:hover {
+  background-color: var(--gray2);
 }
 
 section.articles p {
@@ -268,14 +292,14 @@ section.articles article > * {
 section.articles article span{
  display: inline-block;
  margin: 20px 0;
- 
+
 }
 
 section.articles article h2{
   text-decoration: underline;
   font-size: 2em;
   font-weight: 700;
-  
+
 }
 
 section .imgs {
@@ -286,4 +310,97 @@ section .imgs {
 section article span a {
   color: var(--gray1);
   text-decoration: underline;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+body div.more-articles {
+  justify-content: center;
+  margin: 5em 0;
+  border-bottom: 4px solid var(--gray3);
+  padding-bottom: 1em;
+  text-transform: uppercase;
+}
+
+.center .more-articles a{
+  color: var(--gray2);
+}
+
+body .content-table {
+  height: 1055px;
+  background-image: linear-gradient(var(--gray5), var(--gray1));
+  text-align: center;
+  color: white;
+}
+
+body .content-table  span {
+  display: block;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  margin: 2em 0 1em 0;
+}
+
+body .content-table h2 a {
+  color: white;
+  display: block;
+  text-decoration: underline;
+  font-size: 4em;
+  margin: 0.75em 5em;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+body .content-table p {
+  margin: 2em 15em;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+body .content-table .imgs_table {
+  width: 920px;
+  height: 517px;
+  display: block;
+  margin-top: 2.5em;
+}
+
+body .person-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 394px;
+  padding-top: 4em;
+  width: 90%;
+}
+
+body .person-section > * {
+  border: 1px solid red;
+}
+
+.person-section .person-of-week {
+  grid-column: span 2;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+.person-section .flex {
+  width: 100%;
+}
+
+.person-section .person-of-week div {
+  align-self: flex-start;
+}
+
+.person-section .person-of-week h4 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  padding-bottom: 2em;
+  color: var(--gray2);
+}
+
+.person-section .person-of-week p {
+  font-size: 1.5em;
+  color: var(--gray5);
+  line-height: 1.5em;
 }
