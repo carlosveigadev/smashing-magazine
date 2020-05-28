@@ -1,11 +1,10 @@
 :root {
   --gray0: #bfbfbf;
-  --gray1: #999 ;
+  --gray1: #999;
   --gray2: #888;
   --gray3: #777;
   --gray4: #666;
   --gray5: #555;
-
 }
 
 .main-page {
@@ -27,10 +26,25 @@ nav picture {
   align-items: center;
 }
 
-nav.flex > *{
+nav.flex > * {
   flex: 1.2;
   background-color: var(--gray1);
   height: 107px;
+}
+
+footer ul {
+  width: 90%;
+  list-style: disc;
+  flex-flow: wrap;
+  justify-content: center;
+  line-height: 1.5;
+  font-size: 1.2em;
+  color: var(--gray5);
+  text-align: center;
+  box-sizing: border-box;
+  margin: 2em 0;
+  max-width: 60%;
+  padding: 0;
 }
 
 nav.flex ul {
@@ -46,10 +60,46 @@ nav.flex ul li {
   margin: 0 5px;
 }
 
-nav.flex ul li a:hover {
-  border-radius: 10px;
-  background-color: var(--gray2);
-  padding: 18px 10px;
+div article span a {
+  color: var(--gray1);
+  text-decoration: underline;
+}
+
+footer ul li a {
+  color: white;
+  margin-left: -5px;
+}
+
+.person-section div a {
+  color: var(--gray3);
+  text-decoration: underline;
+  font-size: 1em;
+}
+
+.person-section h3 a {
+  display: inline-block;
+  text-decoration: none;
+  margin: 1em 0;
+  font-size: 2.5em;
+  color: var(--gray5);
+  font-weight: 700;
+}
+
+section.newsletter h2 a {
+  display: inline-block;
+  font-size: 3em;
+  color: #fff;
+  text-decoration: underline;
+  padding: 1em 0;
+}
+
+main .content-table h2 a {
+  color: white;
+  display: block;
+  text-decoration: underline;
+  font-size: 4em;
+  margin: 0.75em 5em;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
 }
 
 nav ul.flex a {
@@ -57,8 +107,35 @@ nav ul.flex a {
   font-family: 'Balsamiq Sans', cursive;
   font-size: 22px;
   font-weight: 700;
-  text-shadow: 1px 1px 1px rgba(0,0,0,.25);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
   cursor: pointer;
+}
+
+section.guides-section div ul li a {
+  text-decoration: underline;
+  color: var(--gray4);
+  line-height: 3em;
+}
+
+.center .more-articles a {
+  color: var(--gray2);
+}
+
+.person-section h3 a:hover {
+  color: var(--gray1);
+  transition: 0.75s;
+}
+
+div.articles div.black a {
+  display: inline-block;
+  color: #fff;
+  margin-bottom: 1em;
+}
+
+nav.flex ul li a:hover {
+  border-radius: 10px;
+  background-color: var(--gray2);
+  padding: 18px 10px;
 }
 
 .logo img {
@@ -69,6 +146,14 @@ nav.flex .search-bar {
   flex: 2;
 }
 
+section.newsletter label button {
+  width: 80%;
+  border-radius: 0 8px 8px 0;
+  border: none;
+  margin-left: -4px;
+  border-left: 1px solid var(--gray1);
+}
+
 nav.flex ul li button {
   font-family: 'Balsamiq Sans', cursive;
   color: white;
@@ -77,7 +162,7 @@ nav.flex ul li button {
   border: 1px solid var(--gray3);
   background-color: var(--gray4);
   border-radius: 11px;
-  box-shadow: 0 13px 27px -15px rgba(50,50,93,.25),0 8px 16px -8px rgba(0,0,0,.3),0 -6px 16px -6px rgba(0,0,0,.025);
+  box-shadow: 0 13px 27px -15px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
   cursor: pointer;
 }
 
@@ -88,10 +173,9 @@ nav.flex ul li button:hover {
 .search-bar label {
   align-items: center;
   justify-content: center;
-
 }
 
-.search-bar label input{
+.search-bar label input {
   width: 325px;
   height: 59px;
   border-radius: 11px;
@@ -117,6 +201,12 @@ nav.flex ul li button:hover {
   padding: 15% 12% 5% 12%;
 }
 
+section.newsletter img {
+  width: 500px;
+  display: block;
+  padding: 3em;
+}
+
 .main-links div img,
 .person-section .person-of-week picture img,
 .person-section .flex picture img {
@@ -139,24 +229,78 @@ nav.flex ul li button:hover {
 
 .person-section .flex picture img {
   border: 4px solid var(--gray3);
-
 }
 
-.main-links div img:hover,
-.flex.red-block div:last-child img:hover,
-.person-section .person-of-week picture img:hover,
-.person-section .flex picture img:hover {
+.main-links div img:hover {
   transform: rotate(0deg);
+}
+
+.flex.red-block div:last-child img {
+  width: 322px;
+  height: 414px;
+  transform: rotate(-10deg);
+  transition: transform 0.2s ease-out;
+  transform-origin: bottom left;
+  position: absolute;
+  bottom: 1.5em;
+}
+
+.person-section .flex picture img:hover,
+.person-section .person-of-week picture img:hover,
+.flex.red-block div:last-child img:hover {
+  transform: rotate(0deg);
+}
+
+.person-section .flex {
+  width: 100%;
 }
 
 .main-links div .flex {
   align-items: center;
 }
 
+section.newsletter p {
+  padding: 1em 0;
+  width: 540px;
+  line-height: 1.5em;
+  font-size: 1.5em;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.person-section div p {
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+main .content-table p {
+  margin: 2em 15em;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+div.articles p {
+  line-height: 2em;
+  font-size: 1em;
+}
+
+footer div.second-list p {
+  text-align: center;
+  color: white;
+  line-height: 1.5em;
+}
+
+.person-section .person-of-week p {
+  font-size: 1.5em;
+  color: var(--gray5);
+  line-height: 1.5em;
+}
+
 .main-links div .flex p {
   font-size: 22px;
   font-weight: 700;
-  text-shadow: 1px 1px 1px rgba(0,0,0,.25);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
 }
 
 .color-2 {
@@ -171,19 +315,48 @@ nav.flex ul li button:hover {
   background-color: var(--gray5);
 }
 
-.main-links div .flex span {
-    padding: 0 5px;
-    font-style: italic;
+.person-section div span {
+  color: var(--gray3);
+  margin-left: 10px;
+  font-size: 1em;
 }
 
-.main-links div h2 {
-  font-size: 3em;
-  text-shadow: 1px 1px 1px rgba(0,0,0,.25);
+main .content-table span {
+  display: block;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  padding: 2em 0 1em 0;
+}
+
+section.guides-section div span {
+  display: inline-block;
+  padding: 10px 0;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.person-section div p span {
+  margin-left: 0;
+}
+
+div.articles article span {
+  display: inline-block;
+  margin: 20px 0;
 }
 
 .main-links div h2 span {
   font-size: 0.4em;
   vertical-align: middle;
+}
+
+.main-links div .flex span {
+  padding: 0 5px;
+  font-style: italic;
+}
+
+.main-links div h2 {
+  font-size: 3em;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
 }
 
 .main-links div h2 span i {
@@ -195,6 +368,20 @@ nav.flex ul li button:hover {
   margin: 20px 0;
 }
 
+footer div .first li {
+  width: 80px;
+  text-align: left;
+}
+
+footer div.second-list ul li {
+  line-height: 2em;
+  padding: 0 1em;
+}
+
+section.guides-section div ul li {
+  list-style: disc;
+}
+
 .main-links div .hashtags li {
   padding: 0 20px;
 }
@@ -203,41 +390,71 @@ nav.flex ul li button:hover {
   color: white;
   font-size: 50px;
   margin-top: 120px;
-  text-shadow: 1px 1px 1px rgba(0,0,0,.25);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
 }
 
 .main-links .second-row .arrow {
   margin-top: 50px;
 }
 
-section.articles > * {
+div.articles > * {
   color: black;
   position: relative;
 }
 
-section.articles >*:not(.black):hover , section.guides-section div:hover{
+section.guides-section div {
+  padding-left: 3em;
+  margin-bottom: 2em;
+}
+
+section.newsletter div {
+  justify-content: center;
+  width: 40%;
+}
+
+.flex.red-block div {
+  background-color: var(--gray3);
+  color: #fff;
+  padding: 1.5em 6em;
+}
+
+.person-section .person-of-week div {
+  align-self: flex-start;
+}
+
+div.articles article > * {
+  color: black;
+}
+
+.person-section > *:hover {
+  background-color: var(--gray1);
+}
+
+div.articles > *:not(.black):hover,
+section.guides-section div:hover {
   width: calc(100% + 60px);
-  height: calc(100%+60px);
+  height: calc(100% + 60px);
   padding: 10px;
   box-shadow: 1px 1px 5px var(--gray1), -1px -1px 5px var(--gray1);
-  background-color: var(--gray1)
+  background-color: var(--gray1);
 }
 
-section.articles:hover, section.guides-section:hover {
- grid-gap: 4em;
-}
-
-section.articles, .guides-section {
+div.articles,
+.guides-section {
   margin: 0 auto;
   width: 90%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 700px;
   grid-gap: 2em;
-
 }
 
-section.articles div.black {
+div.articles:hover,
+section.guides-section:hover {
+  grid-gap: 4em;
+}
+
+div.articles div.black {
   border-radius: 5px;
   grid-column: span 2;
   text-align: center;
@@ -245,34 +462,29 @@ section.articles div.black {
   color: #fff;
   padding: 2em;
 }
-section.articles div.black a {
-  display: inline-block;
-  color: #fff;
-  margin-bottom: 1em;
-}
 
-section.articles div.black h1 a {
+div.articles div.black h3 a {
   font-size: 2em;
   text-decoration: underline;
 }
-section.articles div.black p a{
-  text-decoration: underline;
 
+div.articles div.black p a {
+  text-decoration: underline;
 }
 
 button.white-button {
   background-color: white;
   color: var(--gray3);
-  border-radius:8px;
+  border-radius: 8px;
   font-size: 1.5em;
-  padding: .5em;
+  padding: 0.5em;
 }
 
 button.white-button:hover {
   color: var(--gray5);
 }
 
-section.articles article a.article-arrow {
+div.articles article a.article-arrow {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -281,40 +493,19 @@ section.articles article a.article-arrow {
   display: block;
 }
 
-section.articles article a.article-arrow:hover {
+div.articles article a.article-arrow:hover {
   background-color: var(--gray2);
 }
 
-section.articles p {
-  line-height: 2em;
-  font-size: 1em;
-}
-
-section.articles article > * {
-  color: black;
-}
-
-section.articles article span{
- display: inline-block;
- margin: 20px 0;
-
-}
-
-section.articles article h2{
+div.articles article h2 {
   text-decoration: underline;
   font-size: 2em;
   font-weight: 700;
-
 }
 
-section .imgs {
-  height:290px;
+div .imgs {
+  height: 290px;
   width: 241px;
-}
-
-section article span a {
-  color: var(--gray1);
-  text-decoration: underline;
 }
 
 .center {
@@ -330,38 +521,11 @@ main div.more-articles {
   width: 11.5%;
 }
 
-.center .more-articles a{
-  color: var(--gray2);
-}
-
 main .content-table {
   height: 1055px;
   background-image: linear-gradient(var(--gray5), var(--gray1));
   text-align: center;
   color: white;
-}
-
-main .content-table  span {
-  display: block;
-  font-size: 1.5em;
-  text-transform: uppercase;
-  margin: 2em 0 1em 0;
-}
-
-main .content-table h2 a {
-  color: white;
-  display: block;
-  text-decoration: underline;
-  font-size: 4em;
-  margin: 0.75em 5em;
-  text-shadow: 1px 1px 1px rgba(0,0,0,.25);
-}
-
-main .content-table p {
-  margin: 2em 15em;
-  font-size: 1.5em;
-  line-height: 1.5em;
-  text-shadow: 1px 1px 1px rgba(0,0,0,.25);
 }
 
 main .content-table .imgs_table {
@@ -386,16 +550,14 @@ main .person-section {
   width: 90%;
 }
 
-.person-section > *:hover {
-  background-color: var(--gray1);
+footer h4 {
+  text-align: center;
+  display: block;
+  margin: 2em auto;
 }
 
-.person-section .flex {
-  width: 100%;
-}
-
-.person-section .person-of-week div {
-  align-self: flex-start;
+footer div.first-list h4 {
+  color: white;
 }
 
 .person-section .person-of-week h4 {
@@ -405,69 +567,18 @@ main .person-section {
   color: var(--gray2);
 }
 
-.person-section .person-of-week p {
-  font-size: 1.5em;
-  color: var(--gray5);
-  line-height: 1.5em;
-}
-
-.person-section div a {
-  color: var(--gray3);
-  text-decoration: underline;
-  font-size: 1.0em;
-}
-
-.person-section div span {
-  color: var(--gray3);
-  margin-left: 10px;
-  font-size: 1.0em;
-}
-
-.person-section div p {
-    font-size: 1.3em;
-    line-height: 1.5em;
-
-}
-
-.person-section div p span {
-    margin-left: 0;
-}
-
-.person-section h1 a {
-  display: inline-block;
-  text-decoration: none;
-  margin: 1em 0;
-  font-size: 2.5em;
-  color: var(--gray5);
-  font-weight: 700;
-}
-
-.person-section h1 a:hover {
-  color: var(--gray1);
-  transition: 0.75s;
-}
-
 .flex.red-block {
- height: 420px;
- margin-bottom: 4em;
+  height: 420px;
+  margin-bottom: 4em;
 }
 
 .flex.red-block div:first-child {
   flex: 3;
 }
 
-.flex.red-block div:last-child{
+.flex.red-block div:last-child {
   flex: 1;
   position: relative;
-
-}
-
-.flex.red-block div{
-background-color: var(--gray3);
-color: #fff;
-padding: 1.5em 6em;
-
-
 }
 
 .flex.red-block div:first-child span {
@@ -480,8 +591,12 @@ padding: 1.5em 6em;
   display: inline-block;
   text-decoration: underline;
   font-size: 4em;
-  padding: .5em 0;
+  padding: 0.5em 0;
   color: #fff;
+}
+
+footer div.second-list p:first-child {
+  font-style: italic;
 }
 
 .flex.red-block div:first-child p {
@@ -490,49 +605,14 @@ padding: 1.5em 6em;
   line-height: 1.5em;
 }
 
-.flex.red-block div:last-child img {
-  width: 322px;
-  height: 414px;
-  transform: rotate(-10deg);
-  transition: transform 0.2s ease-out;
-  transform-origin: bottom left;
-  position: absolute;
-   bottom: 1.5em;
-}
-
-section.guides-section div {
-  padding-left: 3em;
-   margin-bottom: 2em;
-}
-
-section.guides-section div span {
-  display: inline-block;
-  padding: 10px 0;
-  font-size: 1em;
-  text-transform: uppercase;
-}
-
 section.guides-section div h2 {
   font-size: 2em;
   font-weight: 700;
   padding: 1em 0;
 }
 
-section.guides-section div ul{
+section.guides-section div ul {
   padding-left: 2em;
-}
-
-section.guides-section div ul li {
-  list-style: disc;
-
-}
-
-section.guides-section div ul li a {
-
-  text-decoration: underline;
-  color: var(--gray4);
-  line-height: 3em;
-
 }
 
 section.newsletter {
@@ -540,53 +620,21 @@ section.newsletter {
   background-color: var(--gray3);
   border-radius: 15px;
   text-align: center;
-
-}
-
-section.newsletter h2 a {
-  display: inline-block;
-  font-size: 3em;
-  color: #fff;
-  text-decoration: underline;
-  padding: 1em 0;
-}
-
-section.newsletter p {
-  padding: 1em 0;
-  width: 540px;
-  line-height: 1.5em;
-  font-size: 1.5em;
-  color: #fff;
-  text-shadow: 1px 1px 1px rgba(0,0,0,.25);
-
-}
-
-section.newsletter img {
-  width: 500px;
-  display: block;
-  padding: 3em;
 }
 
 section.newsletter label {
   display: block;
-  width: 500px;;
-
+  width: 500px;
 }
 
 section.newsletter label input {
-width: 60%;
-background-color: white;
-color: var(--gray3);
-border-radius: 8px 0 0 8px;
-font-size: 1.5em;
-padding: .5em;
-border: none;
-}
-section.newsletter label button {
-  width: 39%;
-  border-radius:0 8px 8px 0;
+  width: 120%;
+  background-color: white;
+  color: var(--gray3);
+  border-radius: 8px 0 0 8px;
+  font-size: 1.5em;
+  padding: 0.5em;
   border: none;
-  margin-left: -4px;
 }
 
 section.newsletter small {
@@ -604,59 +652,12 @@ footer {
   align-items: center;
 }
 
-footer h4 {
-  text-align: center;
-  display: block;
-  margin: 2em auto;
-}
-
-footer ul {
-  width: 90%;
-  list-style: disc;
-  flex-flow: wrap;
-  justify-content: center;
-  line-height: 1.5;
-  font-family: Elena;
-  font-size: 1.2em;
-  color: var(--gray5);
-  text-align: center;
-  box-sizing: border-box;
-  margin: 2em 0;
-  max-width: 60%;
-  list-style: disc;
-  padding: 0;
-}
-
-footer ul li a {
-  color: white;
-  margin-left: -5px;
-}
-
 footer div.first-list {
-    margin: 2em 0;
+  margin: 2em 0;
 }
 
 footer .first.flex {
   margin: 0 auto;
-}
-
-footer div.first-list h4 {
-  color: white;
-}
-
-footer div .first li {
-  width: 80px;
-  text-align: left;
-}
-
-footer div.second-list p:first-child{
-  font-style: italic;
-}
-
-footer div.second-list p{
-  text-align: center;
-  color: white;
-  line-height: 1.5em;
 }
 
 footer div.second-list ul {
@@ -667,9 +668,4 @@ footer div.second-list ul {
   flex-flow: wrap;
   text-align: center;
   font-size: 1em;
-}
-
-footer div.second-list ul li {
-  line-height: 2em;
-  padding: 0 1em;
 }

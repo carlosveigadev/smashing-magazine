@@ -125,7 +125,7 @@
         </section>
 
         <!-- Articles -->
-        <section class="articles">
+        <div class="articles">
           <article>
             <span>2 lorem ipsum</span>
             <a href="#"><h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit,  ut labore et dolore magna aliqua.</h2></a>
@@ -156,7 +156,7 @@
           </article>
            <div class="black">
             <img class="imgs" src="https://d33wubrfki0l68.cloudfront.net/aea2faf51cc69a1e10bb434aa92f7c3821f16787/e4922/images/smashing-cat/singing-barista.svg" alt="Image of mascot">
-            <h1><a href="#">1,651 Lorem Ipsum</a></h1>
+            <h3><a href="#">1,651 Lorem Ipsum</a></h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <p><a href="#">Lorem ipsum dolor.</a></p>
             <button type="button" name="button" class="white-button">Lorem ipsum.</button>
@@ -192,13 +192,13 @@
             </article>
           <div class="black">
             <img class="imgs" src="https://d33wubrfki0l68.cloudfront.net/72280e1450d4ecfc45ef96ea00b27b4bf4ef5d06/eb759/images/smashing-cat/cat-smashing-tv-2.svg" alt="Image of a moscot">
-            <h1><a href="#">1,651 Lorem Ipsum</a></h1>
+            <h3><a href="#">1,651 Lorem Ipsum</a></h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <p><a href="#">Lorem ipsum dolor.</a></p>
             <button type="button" name="button"  class="white-button">Lorem ipsum.</button>
             <p>Lorem ipsum dolor?<a href="#">Lorem ipsum!</a></p>
           </div>
-        </section>
+        </div>
         <div class="center">
           <div class="more-articles">
             <a href="#">Lorem ipsum dolor →</a>
@@ -230,7 +230,7 @@
             </picture>
             <div>
               <a href="#">Lorem Ipsum</a><span>lorem</span>
-              <h1><a href="#">Lorem ipsum dolor sit amet</a></h1>
+              <h3><a href="#">Lorem ipsum dolor sit amet</a></h3>
               <p><span>Lorem 26, 2020</span> - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <a href="#">quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</a></p>
             </div>
           </div>
@@ -240,7 +240,7 @@
             </picture>
             <div>
               <a href="#">Lorem ipsum</a><span>lorem</span>
-              <h1><a href="#">Lorem ipsum dolor sit amet</a></h1>
+              <h3><a href="#">Lorem ipsum dolor sit amet</a></h3>
               <p><span>Lorem 26, 2020</span> - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <a href="#">quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</a></p>
             </div>
           </div>
@@ -250,7 +250,7 @@
             </picture>
             <div>
               <a href="#">Lorem ipsum</a><span>lorem</span>
-              <h1><a href="#">Lorem ipsum dolor sit amet</a></h1>
+              <h3><a href="#">Lorem ipsum dolor sit amet</a></h3>
               <p><span>Lorem 26, 2020</span> - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <a href="#">quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</a></p>
             </div>
           </div>
@@ -260,7 +260,7 @@
             </picture>
             <div>
               <a href="#">Lorem ipsum</a><span>lorem</span>
-              <h1><a href="#">Lorem ipsum dolor sit amet</a></h1>
+              <h3><a href="#">Lorem ipsum dolor sit amet</a></h3>
               <p><span>Lorem 26, 2020</span> - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <a href="#">quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</a></p>
             </div>
           </div>
@@ -270,7 +270,7 @@
             </picture>
             <div>
               <a href="#">Lorem ipsum</a><span>lorem</span>
-              <h1><a href="#">Lorem ipsum dolor sit amet</a></h1>
+              <h3><a href="#">Lorem ipsum dolor sit amet</a></h3>
               <p><span>Lorem 26, 2020</span> - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <a href="#">quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</a></p>
             </div>
           </div>
@@ -280,7 +280,7 @@
             </picture>
             <div>
               <a href="#">Lorem ipsum</a><span>lorem</span>
-              <h1><a href="#">Lorem ipsum dolor sit amet</a></h1>
+              <h3><a href="#">Lorem ipsum dolor sit amet</a></h3>
               <p><span>Lorem 26, 2020</span> - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <a href="#">quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</a></p>
             </div>
           </div>
@@ -367,10 +367,14 @@
           <h2><a href="#">Lorem Ipsum</a></h2>
           <p class="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <img class="center" src="https://d33wubrfki0l68.cloudfront.net/ce7741e1659c0366fda51555365194e0bfd136c0/ae578/images/smashing-cat/cat-with-trampet.svg" alt="Mascot iamge.">
-          <label class="center flex" for="email-input">
-            <input type="email" name="email" value="" placeholder="Lorem (ipsum) dolor">
-            <button type="button" name="button" class="white-button">Subscribe →</button>
-          </label>
+          <div class="center flex">
+            <label for="email-input">
+              <input id="email-input" type="email" name="email" value="" placeholder="Lorem (ipsum) dolor">
+            </label>
+            <label for="button">
+              <button id="button" type="button" name="button" class="white-button">Subscribe →</button>
+            </label>
+          </div>
           <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.<br/>Lorem ipsum dolor sit amet, consectetur.</small>
         </section>
 
@@ -380,62 +384,62 @@
             <a href="#">Lorem ipsum dolor →</a>
           </div>
         </div>
-      </body>
-    </main>
+      </main>
 
-    <!-- Footer -->
-    <footer class="flex">
-      <div class="first-list">
-        <h4>LOREM IPSUM DOLOR SIT AMET.</h4>
-        <ul class="first flex">
-          <li><a href="#">Lorem</a></li>
-          <li><a href="#">Lorem</a></li>
-          <li><a href="#">Lorem</a></li>
-          <li><a href="#">Lorem</a></li>
-          <li><a href="#">Lorem</a></li>
-          <li><a href="#">Lorem</a></li>
-          <li><a href="#">Lorem</a></li>
-          <li><a href="#">Lorem</a></li>
-          <li><a href="#">Lorem</a></li>
-          <li><a href="#">Lorem</a></li>
-          <li><a href="#">Lorem</a></li>
-          <li><a href="#">Lorem</a></li>
-          <li><a href="#">Lorem</a></li>
-          <li><a href="#">Lorem</a></li>
-          <li><a href="#">Lorem</a></li>
-          <li><a href="#">Lorem</a></li>
-          <li><a href="#">Lorem</a></li>
-          <li><a href="#">Lorem</a></li>
-          <li><a href="#">Lorem</a></li>
-          <li><a href="#">Lorem</a></li>
-          <li><a href="#">Lorem</a></li>
-          <li><a href="#">Lorem</a></li>
-          <li><a href="#">Lorem</a></li>
-          <li><a href="#">Lorem</a></li>
-          <li><a href="#">Lorem</a></li>
-          <li><a href="#">Lorem</a></li>
-          <li><a href="#">Lorem</a></li>
-          <li><a href="#">Lorem</a></li>
-          <li><a href="#">Lorem</a></li>
-          <li><a href="#">Lorem</a></li>
-          <li><a href="#">Lorem</a></li>
-        </ul>
-      </div>
-      <div class="second-list">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur.</p>
-        <p>Lorem ipsum dolor.</p>
-        <ul class="flex">
-          <li><a href="#">✎ Lorem ipsum dolor</a></li>
-          <li><a href="#">Lorem ipsum</a></li>
-          <li><a href="#">Lorem ipsum dolor</a></li>
-          <li><a href="#">Lorem ipsum</a></li>
-          <li><a href="#">Lorem ipsum</a></li>
-          <li><a href="#">Lorem ipsum</a></li>
-          <li><a href="#">Lorem </a></li>
-        </ul>
-      </div>
-    </footer>
-  </div>
+      <!-- Footer -->
+      <footer class="flex">
+        <div class="first-list">
+          <h4>LOREM IPSUM DOLOR SIT AMET.</h4>
+          <ul class="first flex">
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+          </ul>
+        </div>
+        <div class="second-list">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+          <p>Lorem ipsum dolor.</p>
+          <ul class="flex">
+            <li><a href="#">✎ Lorem ipsum dolor</a></li>
+            <li><a href="#">Lorem ipsum</a></li>
+            <li><a href="#">Lorem ipsum dolor</a></li>
+            <li><a href="#">Lorem ipsum</a></li>
+            <li><a href="#">Lorem ipsum</a></li>
+            <li><a href="#">Lorem ipsum</a></li>
+            <li><a href="#">Lorem </a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
