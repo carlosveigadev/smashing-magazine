@@ -1,6 +1,6 @@
 # Project Name
 
-> OThis project consists of building a heatmap of the [Smashing magazine] (https://www.smashingmagazine.com/) website
+> This project consists of building a heatmap of the [Smashing magazine] (https://www.smashingmagazine.com/) website
 
 ![screenshot](./app_screenshot.png)
 
