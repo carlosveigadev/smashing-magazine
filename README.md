@@ -1,57 +1,33 @@
 # Project Name
 
-> One paragraph statement about the project.
+> This project consists of building a heatmap of the [Smashing magazine] (https://www.smashingmagazine.com/) website
 
 ![screenshot](./app_screenshot.png)
 
-Additional description about the project and its features.
+In this simple project, we broke apart the website for a popular design magazine. The goal for this exercise was to start training our mindset to think in terms of visual hierarchy, typography and design principles.
 
 ## Built With
 
-- Major languages,
-- frameworks,
-- technologies used
+- HTML,
+- CSS.
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
-
-
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+[Live Demo Link](https://raw.githack.com/wrakc/smashing-magazine/feature/index.html)
 
 ## Authors
 
-👤 **Author1**
+👤 **Victor Gonzalez**
 
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
+- Github: [@githubhandle](https://github.com/shaqri)
+- Twitter: [@twitterhandle](https://twitter.com/victorgonbu1 )
+- Linkedin: [linkedin](https://www.linkedin.com/in/victor-manuel-gonzalez-buitrago-8704731a5/)
 
-👤 **Author2**
+👤 **Carlos Veiga**
 
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
+- Github: [@githubhandle](https://github.com/wrakc)
+- Twitter: [@twitterhandle](https://twitter.com/carlosveig)
+- Linkedin: [linkedin](https://linkedin.com/chveiga)
 
 ## 🤝 Contributing
 
@@ -65,9 +41,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Thanks microverse for the support;
+- Thanks minskins team;
+- Thanks the-manx team;
 
 ## 📝 License
 
