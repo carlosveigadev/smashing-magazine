@@ -19,15 +19,15 @@ In this simple project, we broke apart the website for a popular design magazine
 
 👤 **Victor Gonzalez**
 
-- Github: [@githubhandle](https://github.com/shaqri)
-- Twitter: [@twitterhandle](https://twitter.com/victorgonbu1 )
-- Linkedin: [linkedin](https://www.linkedin.com/in/victor-manuel-gonzalez-buitrago-8704731a5/)
+- [GitHub](https://github.com/shaqri)
+- [Twitter](https://twitter.com/victorgonbu1 )
+- [LinkedIn](https://www.linkedin.com/in/victor-manuel-gonzalez-buitrago-8704731a5/)
 
 👤 **Carlos Veiga**
 
-- Github: [@githubhandle](https://github.com/wrakc)
-- Twitter: [@twitterhandle](https://twitter.com/carlosveig)
-- Linkedin: [linkedin](https://linkedin.com/chveiga)
+- [GitHub](https://github.com/carlosveigadev)
+- [Twitter](https://twitter.com/carlosveigadev)
+- [LinkedIn](https://linkedin.com/carlosveigadev)
 
 ## 🤝 Contributing
 
